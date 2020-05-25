@@ -1,0 +1,137 @@
+/* ==========================================================================
+   HomeSection
+   ========================================================================== */
+.section__back .cdi__img{
+    position: absolute;
+    bottom: 0;
+    right: -60px;
+}
+
+.section__contain{
+    padding: 3.5rem .5rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    font-size: 14px;
+}
+
+.section__contain .top__contain p{
+    color: #fff;
+    width: 300px;
+}
+.section__contain .top__contain{
+    position: relative;
+    padding-top: 50px;
+    height: 100%;
+}
+
+.section__contain .bottom__contain{
+    font-weight: bold;
+    text-transform: uppercase;
+    height: 110px;
+}
+
+.section__back .cdi__img img{
+    height: 250px;
+}
+
+.section__back{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.section__contain .custom-circle{
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.section__contain .custom-circle.circle__blue:before,.section__contain .custom-circle.circle__yellow:before{
+    content: "";
+    position: absolute;
+    display: flex;
+    border: 3px solid gray;
+    height: 117%;
+    width: 117%;
+    border-radius: 50%;
+}
+
+span.circle.circle__green{
+    background: var(--main-green);
+    height: 430px;
+    width: 430px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-left: 90px;
+    padding-bottom: 50px;
+    position: absolute;
+    left: -90px;
+    border-radius: 50%;
+}
+
+span.custom-circle.circle__yellow{
+    background: var(--secondary-color);
+    height: 70px;
+    width: 70px;
+    position: absolute;
+    bottom: 90px;
+    left: 200px;
+}
+
+span.custom-circle.circle__blue{
+    background: var(--main-blue);
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    bottom: 60px;
+    left: 150px;
+}
+
+.title{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    color: #fff;
+    padding-top: 40px;
+}
+
+.title h1{
+    font-weight: bold;
+    font-size: 35px;
+    max-width: 360px;
+}
+
+.title .ajc__logo{
+    width: 120px;
+    position: absolute;
+    right: -15px;
+}
+
+
+.button__join{
+    background: var(--main-green);
+    color: #fff;
+    padding: .2rem 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+.button__join:hover{
+    border: 2px solid var(--main-green);
+    color: var(--main-green);
+    background: #fff;
+}

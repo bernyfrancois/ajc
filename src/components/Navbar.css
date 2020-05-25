@@ -1,0 +1,295 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+}
+nav .brand__logo{
+    height: 40px;
+    width: auto;
+    margin-right: 10px;
+}
+nav .brand__name{
+    font-weight: bold;
+}
+
+#curtain > span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300vw;
+    height: 100vh;
+    display: block;
+    transform-origin: bottom left;
+    transition: 0.5s ease-in-out;
+    transform: rotate(-90deg);
+}
+#curtain > span:nth-child(1){
+    background: #157720;
+    transform: rotate(-90deg);
+    transition-delay: 0.2s;
+}
+#curtain > span:nth-child(2){
+    background: #0075B8;
+    transform: rotate(-90deg);
+    transition-delay: 0.1s;
+}
+#curtain > span:nth-child(3){
+    background: #F6B902;
+    transform: rotate(-90deg);
+    transition-delay: 0s;
+}
+
+.mobile-active #curtain span:nth-child(1){
+    z-index: 1;
+    transition-delay: 0s;
+    transform: rotate(0deg);
+}
+.mobile-active #curtain span:nth-child(2){
+    z-index: 2;
+    transition-delay: 0.1s;
+    transform: rotate(0deg);
+}
+.mobile-active #curtain span:nth-child(3){
+    z-index: 3;
+    transition-delay: 0.2s;
+    transform: rotate(0deg);
+}
+
+.mobile-active #curtain span{
+    z-index: 5;
+}
+/*hamburger icon*/
+.toggle {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    right: 10px;
+    top: 5px;
+    color: #157720;
+    text-align: center;
+    line-height: 40px;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition: -webkit-transform ease-out 200ms;
+    transition: -webkit-transform ease-out 200ms;
+    transition: transform ease-out 200ms;
+    cursor: pointer;
+    z-index: 2;
+}
+.hamburger {
+    width: 25px;
+    height: 3px;
+    background: #157720;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -12.5px;
+    margin-top: -1.5px;
+    transition: transform 200ms;
+}
+.hamburger-1 {
+    transform: translate3d(0, -8px, 0);
+}
+.hamburger-2 {
+    transform: translate3d(0, 0, 0);
+}
+.hamburger-3 {
+    transform: translate3d(0, 8px, 0);
+}
+.mobile-active .hamburger-1 {
+    transform: translate3d(0, 0, 0) rotate(45deg);
+}
+.mobile-active .hamburger-2 {
+    transform: translate3d(0, 0, 0) scale(0.1, 1);
+}
+.mobile-active .hamburger-3 {
+    transform: translate3d(0, 0, 0) rotate(-45deg);
+}
+/*z index conf*/
+.toggle, .brand{
+    z-index: 10;
+}
+
+#curtain #mobile__menu{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    opacity: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.2s;
+    transition-delay: 0.65s;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#curtain #mobile__menu li+li{
+    margin-top: 20px;
+}
+
+.mobile-active #curtain #mobile__menu{
+    opacity: 1;
+}
+
+
+/* ==========================================================================
+   mobile Navigation
+   ========================================================================== */
+
+.toggle-btn {
+    display: none;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    color: var(--main-color);
+    text-align: center;
+    line-height: 40px;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition: -webkit-transform ease-out 200ms;
+    transition: -webkit-transform ease-out 200ms;
+    transition: transform ease-out 200ms;
+    transition: transform ease-out 200ms, -webkit-transform ease-out 200ms;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.hamburger {
+    width: 30px;
+    height: 4px;
+    background: var(--main-green);
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -12.5px;
+    margin-top: -1.5px;
+    -webkit-transition: -webkit-transform 200ms;
+    transition: -webkit-transform 200ms;
+    transition: transform 200ms;
+    transition: transform 200ms, -webkit-transform 200ms;
+}
+
+.hamburger-1 {
+    -webkit-transform: translate3d(0, -8px, 0);
+    transform: translate3d(0, -8px, 0);
+}
+
+.hamburger-2 {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+.hamburger-3 {
+    -webkit-transform: translate3d(0, 8px, 0);
+    transform: translate3d(0, 8px, 0);
+}
+
+.menus.mobile-active .hamburger-1 {
+    -webkit-transform: translate3d(0, 0, 0) rotate(45deg);
+    transform: translate3d(0, 0, 0) rotate(45deg);
+}
+
+.menus.mobile-active .hamburger-2 {
+    -webkit-transform: translate3d(0, 0, 0) scale(0.1, 1);
+    transform: translate3d(0, 0, 0) scale(0.1, 1);
+}
+
+.menus.mobile-active .hamburger-3 {
+    -webkit-transform: translate3d(0, 0, 0) rotate(-45deg);
+    transform: translate3d(0, 0, 0) rotate(-45deg);
+}
+
+@media screen and (max-width: 767px) {
+    .toggle-btn {
+        display: block;
+    }
+}
+
+.curtain {
+    position: fixed;
+    top: 0 !important;
+    left: 0 !important;
+    height: 100% !important;
+    width: 100% !important;
+    overflow: hidden;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile-active .curtain {
+    display: flex;
+}
+
+.curtain span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300%;
+    height: 100%;
+    display: block;
+    transform-origin: bottom left;
+    transition: 0.5s ease-in-out;
+    transform: rotate(-90deg);
+}
+
+.curtain span:nth-child(1) {
+    background: var(--main-color);
+    transform: rotate(-90deg);
+    transition-delay: 0.1s;
+}
+
+.curtain span:nth-child(2) {
+    background: var(--bg-color);
+    transform: rotate(-90deg);
+    transition-delay: 0.05s;
+}
+
+.curtain span:nth-child(3) {
+    background: var(--secondary-color);
+    transform: rotate(-90deg);
+    transition-delay: 0s;
+}
+
+.mobile-active .curtain span:nth-child(1) {
+    z-index: 1;
+    transition-delay: 0s;
+}
+
+.mobile-active .curtain span:nth-child(2) {
+    z-index: 2;
+    transition-delay: 0.05s;
+}
+
+.mobile-active .curtain span:nth-child(3) {
+    z-index: 3;
+    transition-delay: 0.1s;
+}
+
+.mobile-active .curtain span {
+    transform: rotate(0deg);
+}
+
+.curtain span ul {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.mobile-active .curtain {
+    z-index: 1;
+}
