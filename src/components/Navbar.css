@@ -14,6 +14,7 @@ nav .brand__logo{
 }
 nav .brand__name{
     font-weight: bold;
+    font-size: 15px;
 }
 
 #curtain > span{
