@@ -11,6 +11,7 @@ import ServiceSection from "./components/ServiceSection";
 import ActusSection from "./components/ActusSection";
 import ContactSection from "./components/ContactSection";
 import Navbar from "./components/Navbar";
+import Home from "./components/Home";
 
 class App extends Component {
     constructor(props) {
@@ -49,7 +50,7 @@ class App extends Component {
                         render={({state, fullpageApi}) => {
                             return (
                                 <ReactFullpage.Wrapper>
-                                    <HomeSection/>
+                                    <Home/>
                                     <AboutSection/>
                                     <ServiceSection/>
                                     <ActusSection/>
