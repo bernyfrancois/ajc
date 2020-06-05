@@ -1,0 +1,18 @@
+.navbar-nav-mobile{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.nav-item a{
+    border-bottom: 3px solid transparent;
+    transition: border-bottom-color 0.3s;
+}
+.nav-item.active a, .nav-item:hover a{
+    border-bottom: 3px solid #000;
+}

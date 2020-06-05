@@ -11,7 +11,7 @@ import ServiceSection from "./components/ServiceSection";
 import ActusSection from "./components/ActusSection";
 import ContactSection from "./components/ContactSection";
 import Navbar from "./components/Navbar";
-import Home from "./components/Home";
+import MobileNav from "./components/MobileNav";
 
 class App extends Component {
     constructor(props) {
@@ -30,38 +30,47 @@ class App extends Component {
 
     render() {
         return (
-            <div className="App">
+            <div className={`App curtain ${this.state.displayMobileNav ? 'displayMobile' : ''}`}>
                 <Router>
                     <header>
                         <Navbar onClick={this.toggleMobileNav} mobileState={this.state.displayMobileNav}/>
                     </header>
-                    <ReactFullpage
-                        //fullpage options
-                        licenseKey = {'YOUR_KEY_HERE'}
-                        scrollingSpeed = {1000}
-                        navigation ={true}
-                        menu ={["#menu", "#mobile-menu"]}
-                        lazyLoading ={true}
-                        keyboardScrolling ={true}
-                        controlArrows ={true}
-                        sectionSelector={'section'}
-                        verticalCentered={false}
-                        paddingTop={'3.5em'}
-                        render={({state, fullpageApi}) => {
-                            return (
-                                <ReactFullpage.Wrapper>
-                                    <Home/>
-                                    <AboutSection/>
-                                    <ServiceSection/>
-                                    <ActusSection/>
-                                    <ContactSection/>
-                                </ReactFullpage.Wrapper>
-                            );
-                        }}
-                    />
+                    <div className="cr mobile-menu">
+                        <MobileNav/>
+                    </div>
+                    <div className="main-container">
+                        <FullPage/>
+                    </div>
                 </Router>
             </div>
         );
     }
 }
+
+const FullPage = () => (
+    <ReactFullpage
+        //fullpage options
+        licenseKey = {'YOUR_KEY_HERE'}
+        scrollingSpeed = {1000}
+        navigation ={true}
+        menu ={["#menu", "#mobile-menu"]}
+        lazyLoading ={true}
+        keyboardScrolling ={true}
+        controlArrows ={true}
+        sectionSelector={'section'}
+        verticalCentered={false}
+        paddingTop={'3.5em'}
+        render={({state, fullpageApi}) => {
+            return (
+                <ReactFullpage.Wrapper>
+                    <HomeSection/>
+                    <AboutSection/>
+                    <ServiceSection/>
+                    <ActusSection/>
+                    <ContactSection/>
+                </ReactFullpage.Wrapper>
+            );
+        }}
+    />
+)
 export default App;

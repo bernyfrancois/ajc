@@ -5,7 +5,7 @@ class AboutSection extends Component {
     render() {
         return (
             <section data-anchor="about">
-
+                <h1>About</h1>
             </section>
         );
     }

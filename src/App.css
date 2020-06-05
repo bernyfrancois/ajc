@@ -86,65 +86,21 @@ ul ul li {
   text-indent: 0;
   list-style-type: none;
 }
+button:focus{
+  outline: none;
+}
 
 /* ==========================================================================
    Navigation
    ========================================================================== */
 
-.navbar {
-  padding: .2rem .5rem;
-}
-
-nav ul li a {
-  color: var(--main-color);
-  transition: text-shadow 0.3s;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 20px;
-}
-
-nav ul li.active a {
-  text-shadow: var(--secondary-color) 1px 2px;
-}
-
-
-nav ul li a, .swipe_alert a {
-  background: linear-gradient(to top, var(--secondary-color) 0%, var(--secondary-color) 4px, transparent 5px) no-repeat;
-  background-size: 0 100%;
-  transition: background-size 0.3s;
-}
-
-nav ul li.active a, nav ul li:hover a, .swipe_alert a {
-  background-size: 75% 100%;
-}
-
-.mobile-nav ul li a {
-  background: linear-gradient(to top, var(--main-color) 0%, var(--main-color) 4px, transparent 5px) no-repeat;
-  background-size: 0 100%;
-  transition: background-size 0.3s;
-  padding: 0.5rem 0rem;
-}
-
-.mobile-nav ul li.active a {
-  background-size: 100% 100%;
-}
-
-.swipe_alert a {
-  background-size: 100% 100%;
-  cursor: pointer;
-}
 
 .menus {
   position: fixed;
-  z-index: 1;
+  z-index: 5;
   width: 100%;
 }
 
-.navbar-brand .brand__logo{
-  height: 45px;
-  width: auto;
-  margin-right: 10px;
-}
 
 #fp-nav ul li a span, .fp-slidesNav ul li a span {
   background: var(--secondary-color) !important;
@@ -164,11 +120,6 @@ section{
   position: relative;
 }
 
-section .section__contain{
-  padding: .5rem;
-  height: 100%;
-  width: 100%;
-}
 
 @media screen and (max-width: 968px) {
 
@@ -200,6 +151,34 @@ section .section__contain{
 
 }
 
+.App{
+  position: relative;
+  min-height: 100vh;
+  min-width: 100vw;
+  overflow: hidden;
+}
+
+.curtain .cr{
+  width: 500%;
+  height: 100vh;
+  position: absolute;
+  display: block;
+  transform-origin: bottom left;
+  transition: 0.5s ease-in-out;
+  transform: rotate(-90deg);
+}
+
+.curtain .cr.mobile-menu {
+    background: var(--secondary-color);
+    transform: rotate(-90deg);
+    transition-delay: 0s;
+    z-index: 4;
+}
+
+
+.displayMobile.curtain .cr {
+    transform: rotate(0deg);
+}
 
 
 
