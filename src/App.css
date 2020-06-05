@@ -180,5 +180,9 @@ section{
     transform: rotate(0deg);
 }
 
+section{
+  padding: 10px;
+}
+
 
 

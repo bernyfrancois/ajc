@@ -12,13 +12,19 @@ class HomeSection extends Component {
                     <div className="row">
                         <div className="title col-md-6 col-sm-12 position-relative">
                             <div className="title-container">
-                                <h1>Rejoignez la communauté</h1>
-                                <p>Authoritatively unleash adaptive e-tailers through error-free e-markets. Energistically incentivize team driven initiatives via cross-platform experiences. Collaboratively.</p>
+                                <h1>Promouvoir <br/>le potentiel <br/> Gabonais</h1>
+                                <p> L’association jeunesse constructive à pour but
+                                    de promouvoir le potentiel Gabonais.</p>
+                                <p> Et de permettre à au gabon partout dans le
+                                    monde de contribuer au développement de
+                                    notre patrie.</p>
                                 <img className="logo" src={logo} alt="logo ajc"/>
+                                <a data-menuanchor="about" href="#about" className="title__link title__link__green"><span/>AJC</a>
+                                <a data-menuanchor="actus" href="#actus" className="title__link title__link__blue"><span/>Actus</a>
                             </div>
                         </div>
                         <div className="col-md-6 col-sm-12 join">
-                            <p className="join__text">Devenez vous aussi des Citoyens à Durée Indéterminé</p>
+                            <p className="join__text">Deviens toi aussi <br/> un Citoyen à Durée Indéterminé</p>
                             <a href="#" className="join__button">Rejoindre le mouvement</a>
                             <img className="cdi__img" src={cdImg} alt="illustration"/>
                         </div>

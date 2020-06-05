@@ -50,31 +50,83 @@
 .title-container .logo{
     position: absolute;
     right: -10px;
-    top: 20%;
+    top: 25%;
     width: 100px;
 }
 
 .title-container{
-    background: var(--main-green);
+    background: var(--secondary-color);
     height: 450px;
     width: 450px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    padding: 20px 20px 30px 40px;
-    color: #fff;
+    padding: 45px;
+    color: #000;
     position: relative;
+}
+
+.title__link{
+    position: absolute;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+}
+.title__link span{
+    animation: in-out 0.5s alternate infinite;
+}
+
+.title__link span{
+    position: absolute;
+    display: block;
+    height: 120%;
+    width: 120%;
+    border: 1px solid gray;
+    border-radius: 50%;
+}
+
+.title__link__green{
+    height: 90px;
+    width: 90px;
+    background: var(--main-green);
+    bottom: -90px;
+    left: 100px;
+}
+
+@keyframes in-out {
+    from{
+        height: 120%;
+        width: 120%;
+    }
+    to {
+        height: 105%;
+        width: 105%;
+    }
+}
+
+
+.title__link__blue{
+    height: 70px;
+    width: 70px;
+    background: var(--main-blue);
+    top: -30px;
+    left: 350px;
 }
 
 @media all and (max-width: 600px) {
     .title{
         justify-content: flex-start;
+        align-items: flex-start;
     }
     .title-container{
         position: relative;
         left: -50px;
-        height: 380px;
+        min-height: 380px;
         min-width: 380px;
     }
 
@@ -86,8 +138,20 @@
         position: absolute;
         bottom: 0;
         right: 0;
-        height: 200px;
+        height: 250px;
         z-index: -1;
-        opacity: 0.8;
+    }
+
+    .title__link__blue{
+        height: 70px;
+        width: 70px;
+        background: var(--main-blue);
+        bottom: -50px;
+        left: 250px;
+        top: initial;
+    }
+    .title__link__green{
+        bottom: -60px;
+        left: 100px;
     }
 }
