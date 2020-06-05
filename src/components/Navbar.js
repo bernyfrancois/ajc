@@ -5,7 +5,7 @@ import {NavLink} from "react-router-dom";
 
 const Navbar = ({mobileState, onClick}) => (
     <div className={`menus`}>
-        <nav className="navbar navbar-expand-md">
+        <nav id="menu" className="navbar navbar-expand-md">
             <a href="#home" className="navbar-brand" data-menuanchor="home">
                 <img src={logo} alt="icon" className="brand__logo"/>
                 <span className="brand__name">Jeunesse Constructive</span>

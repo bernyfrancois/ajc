@@ -36,7 +36,7 @@ class App extends Component {
                         <Navbar onClick={this.toggleMobileNav} mobileState={this.state.displayMobileNav}/>
                     </header>
                     <div className="cr mobile-menu">
-                        <MobileNav/>
+                        <MobileNav onClick={this.toggleMobileNav}/>
                     </div>
                     <div className="main-container">
                         <FullPage/>

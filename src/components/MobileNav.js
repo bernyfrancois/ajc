@@ -3,7 +3,7 @@ import './MobileNav.css'
 
 const MobileNav = ({onClick}) => (
     <nav>
-        <ul className="navbar-nav-mobile">
+        <ul id="mobile-menu" className="navbar-nav-mobile">
             <li data-menuanchor="home" className="nav-item active">
                 <a onClick={onClick} className="nav-link" href="#home">Accueil</a>
             </li>

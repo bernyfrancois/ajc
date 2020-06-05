@@ -14,6 +14,7 @@
 
 .join__text{
     font-weight: bold;
+    text-transform: uppercase;
 }
 
 .join__button{
@@ -56,9 +57,7 @@
 .title-container{
     background: var(--main-green);
     height: 450px;
-    min-height: 450px;
     width: 450px;
-    max-width: 450px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -68,7 +67,7 @@
     position: relative;
 }
 
-@media all and (max-width: 400px) {
+@media all and (max-width: 600px) {
     .title{
         justify-content: flex-start;
     }
@@ -87,7 +86,7 @@
         position: absolute;
         bottom: 0;
         right: 0;
-        height: 250px;
+        height: 200px;
         z-index: -1;
         opacity: 0.8;
     }
