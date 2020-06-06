@@ -59,7 +59,7 @@ const FullPage = () => (
         controlArrows ={true}
         sectionSelector={'section'}
         verticalCentered={false}
-        paddingTop={'3.5em'}
+        paddingTop={'0'}
         render={({state, fullpageApi}) => {
             return (
                 <ReactFullpage.Wrapper>

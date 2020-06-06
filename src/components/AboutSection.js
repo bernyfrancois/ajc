@@ -19,15 +19,6 @@ class AboutSection extends Component {
         }
     }
 
-    myArrow = ({ type, onClick, isEdge }) => {
-        const pointer = type === consts.PREV ? '👈' : '👉'
-        return (
-            <div onClick={onClick}>
-                {pointer}
-            </div>
-        )
-    }
-
     componentDidMount() {
         this.displayActive()
     }
@@ -40,7 +31,7 @@ class AboutSection extends Component {
 
     render() {
         return (
-            <section data-anchor="about">
+            <section className={"about"} data-anchor="about">
                 <div className="row">
                     <div className="col-12 about__title">
                         <h1>Qui <br/> Sommes-nous...</h1>
@@ -53,9 +44,9 @@ class AboutSection extends Component {
                         </p>
                     </div>
                     <div className="col-12 about__content h-100">
-                        <h2>Nos derniers <br/> actions</h2>
+                        <h2 className={"underline__effect"}>Nos derniers <br/> actions</h2>
                         <div className="slider-wrapper">
-                            <ArticleCarroussel items={this.state.items} arrow={this.myArrow} itemToShow={2} onChange={this.displayActive} />
+                            <ArticleCarroussel items={this.state.items} arrow={this.myArrow} onChange={this.displayActive} />
                         </div>
                     </div>
                 </div>
@@ -65,15 +56,24 @@ class AboutSection extends Component {
 }
 
 const ArticleCarroussel = ({items, arrow, itemToShow, onChange}) => (
-    <Carousel renderArrow={arrow} itemsToShow={itemToShow} onChange={onChange}>
+    <Carousel itemsToShow={itemToShow} onChange={onChange} showArrows={false} breakPoints={[
+        {
+            width: 400,
+            itemsToShow: 1,
+        },
+        {
+            width: 600,
+            itemsToShow: 3,
+        }
+    ]}>
         {items.map(item => (
-            <div key={item.id} className="slider__item">
+            <a href="#" key={item.id} className="slider__item">
                 <img src={item.imgUrl} alt={item.title}/>
                 <h2>{item.title}</h2>
                 <a href="#">
                     Voir plus
                 </a>
-            </div>
+            </a>
         ))}
     </Carousel>
 )

@@ -27,7 +27,17 @@ nav .brand__name{
 /* ==========================================================================
    mobile Navigation
    ========================================================================== */
+.user__icon{
+    position: absolute;
+    right: 60px;
+    top: 10px;
+    display: none;
+}
 
+.user__icon img{
+    height: 35px;
+    color: red;
+}
 .toggle-btn {
     display: none;
     width: 40px;
@@ -90,6 +100,9 @@ nav .brand__name{
 
 @media screen and (max-width: 767px) {
     .toggle-btn {
+        display: block;
+    }
+    .user__icon{
         display: block;
     }
 }

@@ -2,6 +2,7 @@ import React from 'react';
 import logo from "../logo.png";
 import "./Navbar.css";
 import {NavLink} from "react-router-dom";
+import  accountIcon from "../myaccount.svg"
 
 const Navbar = ({mobileState, onClick}) => (
     <div className={`menus`}>
@@ -27,9 +28,13 @@ const Navbar = ({mobileState, onClick}) => (
                     <li data-menuanchor="contact" className="nav-item">
                         <a className="nav-link" href="#contact">Contact</a>
                     </li>
+                    <li data-menuanchor="contact" className="nav-item">
+                        <a className="nav-link" href="#contact">Mon Compte</a>
+                    </li>
                 </ul>
             </div>
         </nav>
+        <a className={"user__icon"} href="#myaccount"><img src={accountIcon} alt="user icon"/></a>
         <button onClick={onClick} className="toggle-btn">
             <span className="hamburger hamburger-1"/>
             <span className="hamburger hamburger-2"/>

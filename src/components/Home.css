@@ -1,3 +1,7 @@
+.home .title{
+    padding-top: 3.5rem;
+}
+
 .cdi__img{
     position: absolute;
     bottom: 0;
@@ -15,6 +19,8 @@
 .join__text{
     font-weight: bold;
     text-transform: uppercase;
+    color: #fff;
+    font-size: 25px;
 }
 
 .join__button{
@@ -29,7 +35,7 @@
     text-transform: uppercase;
     border: 2px solid var(--main-green);
     transition: all 0.3s ease-in-out;
-    width: 50%;
+    width: 300px;
 }
 
 .join__button:hover, .join__button:active, .join__button:focus{
@@ -98,6 +104,11 @@
     left: 100px;
 }
 
+.join{
+    background: url("../banner_gabao.jpg");
+    background-size: cover;
+}
+
 @keyframes in-out {
     from{
         height: 120%;
@@ -126,8 +137,16 @@
     .title-container{
         position: relative;
         left: -50px;
-        min-height: 380px;
-        min-width: 380px;
+        height: 380px;
+        width: 380px;
+    }
+
+    .title-container h1{
+        font-size: 2rem;
+    }
+
+    .title-container p{
+        font-size: 13px;
     }
 
     .join__button{
@@ -153,5 +172,15 @@
     .title__link__green{
         bottom: -60px;
         left: 100px;
+    }
+    .join__text{
+        color: #000;
+        font-size: 15px;
+    }
+}
+
+@media all and (max-width: 780px) {
+    .join{
+        background: none;
     }
 }

@@ -107,7 +107,7 @@ button:focus{
 }
 
 #fp-nav.fp-right{
-  right: 5px!important;
+  right: -3px!important;
 }
 
 
@@ -180,9 +180,12 @@ section{
     transform: rotate(0deg);
 }
 
-section{
-  padding: 10px;
+.underline__effect{
+  text-decoration: underline var(--main-blue);
+  text-align: right;
 }
+
+
 
 
 
