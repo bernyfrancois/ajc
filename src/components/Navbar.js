@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from "../logo.png";
 import "./Navbar.css";
-import {NavLink} from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 import  accountIcon from "../myaccount.svg"
 
 const Navbar = ({mobileState, onClick}) => (
@@ -12,24 +12,24 @@ const Navbar = ({mobileState, onClick}) => (
                 <span className="brand__name">Jeunesse Constructive</span>
             </a>
             <div className="collapse navbar-collapse" id="navbarNav">
-                <ul id="menu" className="navbar-nav">
+                <ul className="navbar-nav">
                     <li data-menuanchor="home" className="nav-item active">
                         <a className="nav-link" href="#home">Accueil</a>
-                    </li>
-                    <li data-menuanchor="about" className="nav-item">
-                        <a className="nav-link" href="#about">Présentation</a>
-                    </li>
-                    <li data-menuanchor="actus" className="nav-item">
-                        <a className="nav-link" href="#actus">Services</a>
                     </li>
                     <li className="nav-item">
                         <a className="nav-link" href={"#mooc241"}>Formation241</a>
                     </li>
+                    <li data-menuanchor="about" className="nav-item">
+                        <a className="nav-link" href="#about">Réalisations</a>
+                    </li>
+                    <li data-menuanchor="actus" className="nav-item">
+                        <a className="nav-link" href="#actus">Actualités</a>
+                    </li>
                     <li data-menuanchor="contact" className="nav-item">
                         <a className="nav-link" href="#contact">Contact</a>
                     </li>
-                    <li data-menuanchor="contact" className="nav-item">
-                        <a className="nav-link" href="#contact">Mon Compte</a>
+                    <li className="nav-item">
+                        <Link className="nav-link" to={"myaccount"}>Mon Compte</Link>
                     </li>
                 </ul>
             </div>

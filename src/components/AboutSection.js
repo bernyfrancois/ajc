@@ -32,7 +32,7 @@ class AboutSection extends Component {
     render() {
         return (
             <section className={"about"} data-anchor="about">
-                <div className="row">
+                <div className="row d-block">
                     <div className="col-12 about__title">
                         <h1>Qui <br/> Sommes-nous...</h1>
                         <p>
@@ -46,7 +46,7 @@ class AboutSection extends Component {
                     <div className="col-12 about__content h-100">
                         <h2 className={"underline__effect"}>Nos derniers <br/> actions</h2>
                         <div className="slider-wrapper">
-                            <ArticleCarroussel items={this.state.items} arrow={this.myArrow} onChange={this.displayActive} />
+                            <ArticleCarroussel items={this.state.items} onChange={this.displayActive} />
                         </div>
                     </div>
                 </div>
@@ -55,7 +55,7 @@ class AboutSection extends Component {
     }
 }
 
-const ArticleCarroussel = ({items, arrow, itemToShow, onChange}) => (
+const ArticleCarroussel = ({items, itemToShow, onChange}) => (
     <Carousel itemsToShow={itemToShow} onChange={onChange} showArrows={false} breakPoints={[
         {
             width: 400,

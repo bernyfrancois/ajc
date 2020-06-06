@@ -1,29 +1,32 @@
 {
   "files": {
-    "main.css": "./static/css/main.040a6455.chunk.css",
-    "main.js": "./static/js/main.91f9adc6.chunk.js",
-    "main.js.map": "./static/js/main.91f9adc6.chunk.js.map",
+    "main.css": "./static/css/main.72c970b0.chunk.css",
+    "main.js": "./static/js/main.b46ad753.chunk.js",
+    "main.js.map": "./static/js/main.b46ad753.chunk.js.map",
     "runtime-main.js": "./static/js/runtime-main.fce20a7c.js",
     "runtime-main.js.map": "./static/js/runtime-main.fce20a7c.js.map",
     "static/css/2.4a00ddcd.chunk.css": "./static/css/2.4a00ddcd.chunk.css",
-    "static/js/2.98952e68.chunk.js": "./static/js/2.98952e68.chunk.js",
-    "static/js/2.98952e68.chunk.js.map": "./static/js/2.98952e68.chunk.js.map",
+    "static/js/2.2ede4a28.chunk.js": "./static/js/2.2ede4a28.chunk.js",
+    "static/js/2.2ede4a28.chunk.js.map": "./static/js/2.2ede4a28.chunk.js.map",
     "index.html": "./index.html",
-    "precache-manifest.75b50eaf18cd9dbd320388d80cc073cb.js": "./precache-manifest.75b50eaf18cd9dbd320388d80cc073cb.js",
+    "precache-manifest.08fd20ae4c3f426bdaf54266cff51a6b.js": "./precache-manifest.08fd20ae4c3f426bdaf54266cff51a6b.js",
     "service-worker.js": "./service-worker.js",
     "static/css/2.4a00ddcd.chunk.css.map": "./static/css/2.4a00ddcd.chunk.css.map",
-    "static/css/main.040a6455.chunk.css.map": "./static/css/main.040a6455.chunk.css.map",
-    "static/js/2.98952e68.chunk.js.LICENSE.txt": "./static/js/2.98952e68.chunk.js.LICENSE.txt",
+    "static/css/main.72c970b0.chunk.css.map": "./static/css/main.72c970b0.chunk.css.map",
+    "static/js/2.2ede4a28.chunk.js.LICENSE.txt": "./static/js/2.2ede4a28.chunk.js.LICENSE.txt",
     "static/media/Home.css": "./static/media/banner_gabao.89aeba90.jpg",
     "static/media/cdi.png": "./static/media/cdi.03723fc6.png",
+    "static/media/facebook.svg": "./static/media/facebook.e6f42ec5.svg",
     "static/media/logo.png": "./static/media/logo.73d62034.png",
-    "static/media/myaccount.svg": "./static/media/myaccount.2d1cde32.svg"
+    "static/media/mail.svg": "./static/media/mail.72798489.svg",
+    "static/media/myaccount.svg": "./static/media/myaccount.2d1cde32.svg",
+    "static/media/phone.svg": "./static/media/phone.f969ee98.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.fce20a7c.js",
     "static/css/2.4a00ddcd.chunk.css",
-    "static/js/2.98952e68.chunk.js",
-    "static/css/main.040a6455.chunk.css",
-    "static/js/main.91f9adc6.chunk.js"
+    "static/js/2.2ede4a28.chunk.js",
+    "static/css/main.72c970b0.chunk.css",
+    "static/js/main.b46ad753.chunk.js"
   ]
 }

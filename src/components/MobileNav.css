@@ -12,7 +12,14 @@
 .nav-item a{
     border-bottom: 3px solid transparent;
     transition: border-bottom-color 0.3s;
+    padding-left: 0;
+    padding-right: 0;
 }
 .nav-item.active a, .nav-item:hover a{
     border-bottom: 3px solid #000;
+}
+
+.nav-item{
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
 }

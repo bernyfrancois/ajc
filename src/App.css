@@ -18,10 +18,6 @@ a:hover{
   background: none;
 }
 
-main{
-  padding-top: 50px;
-}
-
 
 /* ==========================================================================
    Base styles: opinionated defaults
@@ -156,6 +152,11 @@ section{
   min-height: 100vh;
   min-width: 100vw;
   overflow: hidden;
+  font-family: 'Bebas Neue', sans-serif;
+}
+
+h1,h2{
+  font-weight: bolder;
 }
 
 .curtain .cr{
@@ -185,6 +186,20 @@ section{
   text-align: right;
 }
 
+section{
+  padding-top: 3.5rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+
+@media only screen and (min-width: 700px) {
+  /* Style adjustments for viewports that meet the condition */
+
+  section{
+    padding-top: 4.5rem;
+  }
+}
 
 
 

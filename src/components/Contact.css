@@ -1,0 +1,75 @@
+.contact{
+    position: relative;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.contact__header{
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+}
+
+.contact__logo{
+    width: 100px;
+    opacity: 0.4;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+}
+
+.contact footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    background: var(--main-green);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 30px;
+}
+
+.contact .footer__links h2{
+    font-size: 1.5rem;
+}
+
+.contact .footer__links a{
+    display: block;
+    font-size: 15px;
+    margin-top: 10px;
+}
+.contact .footer__links .icon{
+    width: 25px;
+    margin-right: 10px;
+}
+
+.contact .footer__menu{
+    text-align: right;
+}
+
+.contact .footer__menu ul li{
+    padding-top: 10px;
+}
+
+.contact .credits{
+    font-size: 9px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.parteners{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 700px;
+}
+
+.parteners a{
+    display: inline-block;
+    width: 80px;
+    margin: 10px;
+}
+
+.parteners a img{
+    width: 100%;
+    height: auto;
+}

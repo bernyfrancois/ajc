@@ -1,14 +1,9 @@
-.about .row{
-    padding-top: 3.5rem!important;
-    padding: 0.6rem;
-    padding-right: 1.1rem;
-}
 
 .slider__item{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 300px;
+    height: 250px;
     overflow: hidden;
     position: relative;
     text-align: center;
@@ -50,4 +45,8 @@
 .rec.rec-dot_active{
     background-color: var(--main-blue);
     box-shadow: 0 0 1px 3px var(--main-blue);
+}
+
+.about__content > h2{
+    font-size: 1.5rem;
 }

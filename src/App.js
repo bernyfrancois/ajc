@@ -1,13 +1,11 @@
 import React, {Component} from 'react';
 import {BrowserRouter as Router} from "react-router-dom";
-import logo from './logo.png';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import ReactFullpage from '@fullpage/react-fullpage';
 import 'fullpage.js/dist/fullpage.min.css'
 import HomeSection from "./components/HomeSection";
 import AboutSection from "./components/AboutSection";
-import ServiceSection from "./components/ServiceSection";
 import ActusSection from "./components/ActusSection";
 import ContactSection from "./components/ContactSection";
 import Navbar from "./components/Navbar";
@@ -59,13 +57,11 @@ const FullPage = () => (
         controlArrows ={true}
         sectionSelector={'section'}
         verticalCentered={false}
-        paddingTop={'0'}
         render={({state, fullpageApi}) => {
             return (
                 <ReactFullpage.Wrapper>
                     <HomeSection/>
                     <AboutSection/>
-                    <ServiceSection/>
                     <ActusSection/>
                     <ContactSection/>
                 </ReactFullpage.Wrapper>
