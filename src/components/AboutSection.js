@@ -21,36 +21,13 @@ class AboutSection extends Component {
     }
 
     componentDidMount() {
-        this.displayActive()
-    }
 
-    displayActive  = () => {
-        const currentActiveSlides = document.querySelectorAll('[tabindex="0"]');
-        currentActiveSlides.forEach(item => item.classList.remove("isActive"));
-        currentActiveSlides[1].classList.add("isActive")
     }
 
     render() {
         return (
             <section className={"about"} data-anchor="about">
-                <div className="d-block">
-                    <div className="about__title">
-                        <h1>Qui <br/> Sommes-nous...</h1>
-                        <p>
-                            La plateforme jeunesse constructive est une
-                            création des membres de la dispora Gabonaise
-                            <br/>résidant en France et animés par le souhait de
-                            contribuer au à l’engagement citoyen sur les défis <br/>
-                            de développement du Gabon.
-                        </p>
-                    </div>
-                    <div className="about__content">
-                        <h2 className={"underline__effect"}>Nos actions</h2>
-                        <div className="slider-wrapper">
-                            <ArticleCarroussel items={this.state.items} onChange={this.displayActive} />
-                        </div>
-                    </div>
-                </div>
+
             </section>
         );
     }

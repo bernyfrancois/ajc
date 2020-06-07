@@ -119,6 +119,6 @@ nav .brand__name{
 @media screen and (min-width: 767px) {
     #menu{
         background: #fff;
-        box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.3);
+        box-shadow: 1px 1px 5px 1px rgba(154, 154, 154, 0.2);
     }
 }

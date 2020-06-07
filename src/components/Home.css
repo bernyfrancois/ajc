@@ -1,230 +1,258 @@
 .home{
-    padding: 4rem 0 0;
-}
-
-.cdi__img{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    height: 300px;
-    z-index: -1;
-}
-
-.join{
     display: flex;
-    justify-content: center;
     flex-direction: column;
 }
 
-.join__text{
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #fff;
-    font-size: 25px;
-}
-
-.join__button{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: var(--main-green);
-    color: #fff;
-    font-weight: bold;
-    padding: 8px;
-    border-radius: 30px;
-    text-transform: uppercase;
-    border: 2px solid var(--main-green);
-    transition: all 0.3s ease-in-out;
-    width: 300px;
-}
-
-.join__button:hover, .join__button:active, .join__button:focus{
-    background: #fff;
-    color: var(--main-green);
-}
-
-.container-fluid, .row{
+.zone1{
     height: 100%;
-}
-
-.title{
+    width:100%;
     display: flex;
-    align-items: center;
     justify-content: center;
+    position: relative;
+    bottom: -5%;
 }
 
-.title h1{
-    font-size: 1.6rem!important;
+.zone1__logo{
+    width: 170px;
 }
 
-.title-container .logo{
-    position: absolute;
-    right: -30px;
-    top: 17%;
-    width: 110px;
-}
-
-.title-container{
-    background: var(--secondary-color);
-    height: 450px;
-    width: 450px;
+.zone1__container{
+    position: relative;
+    background: rgb(118, 187, 64);
+    bottom: -50px;
+    height: 250px;
+    width: 250px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    padding: 45px;
-    color: #000;
+    align-items: center;
+    z-index: 1;
+}
+
+.zone1__link{
+    position: absolute;
+    border-radius: 50%;
+    font-weight: bold;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+}
+
+.zone1__link:hover{
+    color: #fff;
+}
+
+.zone1__link > span{
+    position: absolute;
+    display: block;
+}
+
+.zone1__link > .border-2{
+    border: 2px solid gray;
+    width: 145%;
+    height: 145%;
+    border-radius: 50%;
+    animation: onde2 0.8s ease-in-out infinite alternate-reverse;
+}
+
+.zone1__link > .border-1{
+    border: 1px solid gray;
+    width: 120%;
+    height: 120%;
+    border-radius: 50%;
+    animation: onde1 0.8s ease-in-out infinite alternate-reverse;
+    animation-delay: 0.2s;
+}
+
+
+.zone1__link.yellow{
+    height: 60px;
+    width: 60px;
+    background: var(--secondary-color);
+    color: #0A111E;
+    right: -20px;
+    top: 0;
+}
+
+.zone1__link.yellow > span{
+    border-color: var(--secondary-color);
+}
+
+.zone1__link.green{
+    height: 70px;
+    width: 70px;
+    background: var(--main-green);
+    left: -10%;
+    bottom: -5%;
+}
+
+.zone1__link.green > span{
+    border-color: var(--main-green);
+}
+
+.zone1__link.blue{
+    height: 80px;
+    width: 80px;
+    background: var(--main-blue);
+    bottom: -5%;
+    right: -10%;
+}
+
+.zone1__link.blue > span{
+    border-color: var(--main-blue);
+}
+
+.zone2{
+    background:rgb(249, 185, 0);
+    min-height: 55vh;
+    height: 55vh;
+    border-radius: 40% 40% 0 0;
     position: relative;
 }
 
-.title__link{
-    position: absolute;
-    border-radius: 50%;
+.zone2__container{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
+    justify-items: center;
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+    padding-top: 70px;
+    height: 100%;
+}
+
+.zone2__join{
+    display: inline-block;
     text-transform: uppercase;
-    color: #fff;
-    font-size: 12px;
-}
-
-.title__link span:nth-child(1){
-    position: absolute;
-    display: block;
-    height: 120%;
-    width: 120%;
-    border: 2px solid;
-    border-radius: 50%;
-    animation: in-out1 0.5s alternate infinite;
-}
-.title__link span:nth-child(2){
-    position: absolute;
-    display: block;
-    height: 140%;
-    width: 140%;
-    border: 1px solid;
-    border-radius: 50%;
-    animation: in-out2 0.5s alternate infinite;
-}
-
-.title__link__green{
-    height: 60px;
-    width: 60px;
-    background: var(--main-green);
-    bottom: -15%;
-    left: 25%;
-}
-
-.title__link__green span{
-    border-color: var(--main-green) !important;
-}
-.title__link__yellow span{
-    border-color: var(--secondary-color) !important;
-}
-.title__link__blue span{
-    border-color: var(--main-blue) !important;
-}
-
-.join{
-    background: url("../banner_gabao.jpg");
-    background-size: cover;
-}
-
-@keyframes in-out1 {
-    from{
-        height: 130%;
-        width: 130%;
-    }
-    to {
-        height: 110%;
-        width: 110%;
-    }
-}
-@keyframes in-out2 {
-    from{
-        height: 160%;
-        width: 160%;
-    }
-    to {
-        height: 125%;
-        width: 125%;
-    }
-}
-
-.title__link__blue{
-    height: 60px;
-    width: 60px;
+    font-weight: bold;
+    padding: 5px;
     background: var(--main-blue);
-    left: 5%;
-    bottom: -5%;
-}
-.title__link__yellow{
-    height: 70px;
-    width: 70px;
-    background: var(--secondary-color);
-    top: -10%;
-    left: 80%;
-    color: #000;
+    width: 160px;
+    align-self: center;
+    color: #fff;
+    transition: width 0.3s;
 }
 
-@media all and (max-width: 600px) {
-    .title{
-        justify-content: flex-start;
-        align-items: flex-start;
+.zone2__container h1{
+    font-size: 1.7rem;
+    color: #fff;
+    text-shadow: 0 3px 3px #6a6a6a;
+    margin-bottom: 20px;
+}
+
+.zone2__container h2{
+    font-weight: bolder;
+    font-size: 4rem;
+    color: #157720;
+    text-shadow: 0 1px 3px #3d3d3d;
+    position: absolute;
+    bottom: 45px;
+    width: 100%;
+    text-align: right;
+    padding-right: 10%;
+}
+
+.zone2__sloganImg{
+    position: absolute;
+    width: 45%;
+    bottom: 45px;
+    left: 10%;
+}
+
+.zone2__join:hover{
+    color: #fff;
+    width: 200px;
+}
+
+.zone2__slogan{
+    position: absolute;
+    bottom: 0;
+    background: green;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+
+.zone2__slogan span{
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: #fff;
+    text-shadow: 0 3px 3px #3d3d3d;
+}
+
+@keyframes onde1 {
+    from{
+        width: 120%;
+        height: 120%;
     }
-    .title-container{
-        position: relative;
-        left: -50px;
-        height: 380px;
-        width: 380px;
+    to{
+        width: 105%;
+        height: 105%;
+    }
+}
+@keyframes onde2 {
+    from{
+        width: 140%;
+        height: 140%;
+    }
+    to{
+        width: 125%;
+        height: 125%;
+    }
+}
+
+@media all and (max-width: 340px) {
+    .zone1{
+        bottom: -10%;
     }
 
-    .title-container h1{
-        font-size: 2rem;
+    .zone1__container{
+        bottom: -50px;
+        height: 180px;
+        width: 180px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1;
     }
 
-    .title-container p{
-        font-size: 13px;
+    .zone1__logo{
+        width: 120px;
+    }
+    .zone1__link{
+        font-size: 11px;
     }
 
-    .join__button{
-        width: 100%;
-    }
-
-    .cdi__img{
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        height: 250px;
-        z-index: -1;
-    }
-
-    .title__link__blue{
+    .zone1__link.green{
         height: 50px;
         width: 50px;
-        background: var(--main-blue);
-        bottom: -70px;
-        left: 200px;
-        top: initial;
+        bottom: -2%;
+        right: -10%;
     }
-    .title__link__green{
-        bottom: -60px;
-        left: 100px;
+    .zone1__link.blue{
+        height: 60px;
+        width: 60px;
+        bottom: -5%;
+        right: -10%;
     }
-    .title__link__yellow{
-        top: initial;
-        bottom: -10%;
-        left: 80%;
-    }
-}
 
-@media all and (max-width: 780px) {
-    .join{
-        background: none;
+    .zone1__link.yellow{
+        height: 50px;
+        width: 50px;
+        right: -15%;
     }
-    .join__text{
-        color: #000;
-        font-size: 15px;
+
+
+    .zone2__sloganImg{
+        width: 35%;
+        bottom: 45px;
+        left: 10%;
     }
+
 }
