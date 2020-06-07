@@ -58,6 +58,9 @@ const FullPage = () => (
         sectionSelector={'section'}
         verticalCentered={false}
         render={({state, fullpageApi}) => {
+            document.addEventListener("resize", (e) => {
+                fullpageApi.rebuild();
+            })
             return (
                 <ReactFullpage.Wrapper>
                     <HomeSection/>
