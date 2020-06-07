@@ -2,19 +2,20 @@ import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import Carousel, { consts } from 'react-elastic-carousel';
 import './About.css';
+import imgPlaceholder from "../Jouez-et-gagnez.jpg"
 
 class AboutSection extends Component {
     constructor(props) {
         super(props);
         this.state = {
             items: [
-                {id: 1, title: 'Lancement du jeu concours "Entreprendre Gabon"', imgUrl: "https://lh3.googleusercontent.com/proxy/S_TETmXpK2onMmIAJ1FH6lDIXAPaRC_P4LYlSojSL5xm0dWJgRKeQN31Us5sa6x4Y1GsUpn8yKy04sdCr2iuYpDDvvE0H1HBmdz0ZeNGScJkulVWnHGGniB1vUmDVtY"},
-                {id: 2, title: 'Lancement du jeu concours "Entreprendre Gabon"', imgUrl: "https://lh3.googleusercontent.com/proxy/S_TETmXpK2onMmIAJ1FH6lDIXAPaRC_P4LYlSojSL5xm0dWJgRKeQN31Us5sa6x4Y1GsUpn8yKy04sdCr2iuYpDDvvE0H1HBmdz0ZeNGScJkulVWnHGGniB1vUmDVtY"},
-                {id: 3, title: 'Lancement du jeu concours "Entreprendre Gabon"', imgUrl: "https://lh3.googleusercontent.com/proxy/S_TETmXpK2onMmIAJ1FH6lDIXAPaRC_P4LYlSojSL5xm0dWJgRKeQN31Us5sa6x4Y1GsUpn8yKy04sdCr2iuYpDDvvE0H1HBmdz0ZeNGScJkulVWnHGGniB1vUmDVtY"},
-                {id: 4, title: 'Lancement du jeu concours "Entreprendre Gabon"', imgUrl: "https://lh3.googleusercontent.com/proxy/S_TETmXpK2onMmIAJ1FH6lDIXAPaRC_P4LYlSojSL5xm0dWJgRKeQN31Us5sa6x4Y1GsUpn8yKy04sdCr2iuYpDDvvE0H1HBmdz0ZeNGScJkulVWnHGGniB1vUmDVtY"},
-                {id: 5, title: 'Lancement du jeu concours "Entreprendre Gabon"', imgUrl: "https://lh3.googleusercontent.com/proxy/S_TETmXpK2onMmIAJ1FH6lDIXAPaRC_P4LYlSojSL5xm0dWJgRKeQN31Us5sa6x4Y1GsUpn8yKy04sdCr2iuYpDDvvE0H1HBmdz0ZeNGScJkulVWnHGGniB1vUmDVtY"},
-                {id: 6, title: 'Lancement du jeu concours "Entreprendre Gabon"', imgUrl: "https://lh3.googleusercontent.com/proxy/S_TETmXpK2onMmIAJ1FH6lDIXAPaRC_P4LYlSojSL5xm0dWJgRKeQN31Us5sa6x4Y1GsUpn8yKy04sdCr2iuYpDDvvE0H1HBmdz0ZeNGScJkulVWnHGGniB1vUmDVtY"},
-                {id: 7, title: 'Lancement du jeu concours "Entreprendre Gabon"', imgUrl: "https://lh3.googleusercontent.com/proxy/S_TETmXpK2onMmIAJ1FH6lDIXAPaRC_P4LYlSojSL5xm0dWJgRKeQN31Us5sa6x4Y1GsUpn8yKy04sdCr2iuYpDDvvE0H1HBmdz0ZeNGScJkulVWnHGGniB1vUmDVtY"},
+                {id: 1, title: 'Lancement du jeu concours "Entreprendre Gabon"', imgUrl: imgPlaceholder},
+                {id: 2, title: 'Lancement du jeu concours "Entreprendre Gabon"', imgUrl: imgPlaceholder},
+                {id: 3, title: 'Lancement du jeu concours "Entreprendre Gabon"', imgUrl: imgPlaceholder},
+                {id: 4, title: 'Lancement du jeu concours "Entreprendre Gabon"', imgUrl: imgPlaceholder},
+                {id: 5, title: 'Lancement du jeu concours "Entreprendre Gabon"', imgUrl: imgPlaceholder},
+                {id: 6, title: 'Lancement du jeu concours "Entreprendre Gabon"', imgUrl: imgPlaceholder},
+                {id: 7, title: 'Lancement du jeu concours "Entreprendre Gabon"', imgUrl: imgPlaceholder},
             ]
         }
     }
@@ -44,7 +45,7 @@ class AboutSection extends Component {
                         </p>
                     </div>
                     <div className="col-12 about__content h-100">
-                        <h2 className={"underline__effect"}>Nos derniers <br/> actions</h2>
+                        <h2 className={"underline__effect"}>Nos actions</h2>
                         <div className="slider-wrapper">
                             <ArticleCarroussel items={this.state.items} onChange={this.displayActive} />
                         </div>

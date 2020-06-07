@@ -54,7 +54,7 @@ class ContactSection extends Component {
         return (
             <section className={"contact"} data-anchor="contact">
                 <div className="contact__header">
-                    <h1>Merci à <br/> tous nos partenaires...</h1>
+                    <h1>Partenaires <br/> officiels...</h1>
                     <img className={"contact__logo"} src={logo} alt="logo ajc"/>
                 </div>
                 <div className="contact__parteners">

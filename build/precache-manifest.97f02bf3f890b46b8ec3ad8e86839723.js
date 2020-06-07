@@ -1,31 +1,35 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e2b1aade58a6ebbded65655d7e651ccd",
+    "revision": "f109841681370ae87f7da305eac93447",
     "url": "./index.html"
   },
   {
-    "revision": "7cbb9cd3b810ac0470a5",
+    "revision": "924a14f09989f7f4e5cc",
     "url": "./static/css/2.4a00ddcd.chunk.css"
   },
   {
-    "revision": "2838882be7a20ef728bb",
+    "revision": "965f052178fca380e87a",
     "url": "./static/css/main.72c970b0.chunk.css"
   },
   {
-    "revision": "7cbb9cd3b810ac0470a5",
-    "url": "./static/js/2.2ede4a28.chunk.js"
+    "revision": "924a14f09989f7f4e5cc",
+    "url": "./static/js/2.3ed1a3d6.chunk.js"
   },
   {
     "revision": "4f9c474e018a591c38cc26799338eb79",
-    "url": "./static/js/2.2ede4a28.chunk.js.LICENSE.txt"
+    "url": "./static/js/2.3ed1a3d6.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "2838882be7a20ef728bb",
-    "url": "./static/js/main.b46ad753.chunk.js"
+    "revision": "965f052178fca380e87a",
+    "url": "./static/js/main.c711dc42.chunk.js"
   },
   {
     "revision": "ddd56ce623145cbf6065",
     "url": "./static/js/runtime-main.fce20a7c.js"
+  },
+  {
+    "revision": "6aa2003ce33085e7694287dbb30b062c",
+    "url": "./static/media/Jouez-et-gagnez.6aa2003c.jpg"
   },
   {
     "revision": "89aeba90cee229a7cdbb71f7f29ea883",

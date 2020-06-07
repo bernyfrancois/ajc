@@ -20,7 +20,7 @@ const Navbar = ({mobileState, onClick}) => (
                         <a className="nav-link" href={"#mooc241"}>Formation241</a>
                     </li>
                     <li data-menuanchor="about" className="nav-item">
-                        <a className="nav-link" href="#about">Réalisations</a>
+                        <a className="nav-link" href="#about">Nos actions</a>
                     </li>
                     <li data-menuanchor="actus" className="nav-item">
                         <a className="nav-link" href="#actus">Actualités</a>
