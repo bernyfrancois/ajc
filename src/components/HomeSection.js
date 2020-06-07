@@ -18,8 +18,9 @@ class HomeSection extends Component {
                                     monde de contribuer au développement de
                                     notre patrie.</p>
                                 <img className="logo" src={logo} alt="logo ajc"/>
-                                <a data-menuanchor="about" href="#about" className="title__link title__link__green"><span/>AJC</a>
-                                <a data-menuanchor="actus" href="#actus" className="title__link title__link__blue"><span/>Actus</a>
+                                <a data-menuanchor="about" href="#about" className="title__link title__link__blue"><span/><span/>AJC</a>
+                                <a data-menuanchor="actus" href="#actus" className="title__link title__link__green"><span/><span/>Actus</a>
+                                <a data-menuanchor="actus" href="#actus" className="title__link title__link__yellow"><span/><span/>Actions</a>
                             </div>
                         </div>
                         <div className="col-md-6 col-sm-12 join">

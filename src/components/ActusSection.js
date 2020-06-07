@@ -21,7 +21,7 @@ class ActusSection extends Component {
     render() {
         return (
             <section data-anchor="actus">
-                <h1>Nos <br/> dernières actualités...</h1>
+                <h1>Nos <br/> actualités...</h1>
                 <div className="actus__slider">
                     <ArticlesSlider items={this.state.items} itemToShow={4}/>
                 </div>

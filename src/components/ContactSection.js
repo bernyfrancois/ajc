@@ -26,27 +26,7 @@ class ContactSection extends Component {
                 {
                     img: logo,
                     link: "organeus.tech",
-                },
-                {
-                    img: logo,
-                    link: "organeus.tech",
-                },
-                {
-                    img: logo,
-                    link: "organeus.tech",
-                },
-                {
-                    img: logo,
-                    link: "organeus.tech",
-                },
-                {
-                    img: logo,
-                    link: "organeus.tech",
-                },
-                {
-                    img: logo,
-                    link: "organeus.tech",
-                },
+                }
             ]
         }
     }
@@ -55,7 +35,6 @@ class ContactSection extends Component {
             <section className={"contact"} data-anchor="contact">
                 <div className="contact__header">
                     <h1>Partenaires <br/> officiels...</h1>
-                    <img className={"contact__logo"} src={logo} alt="logo ajc"/>
                 </div>
                 <div className="contact__parteners">
                     <div className={"parteners"}>
@@ -80,7 +59,7 @@ class ContactSection extends Component {
                             </a>
                             <a href="contact@jeunesseconstructive.com">
                                 <img className="icon" src={mailIcon} alt="icon"/>
-                                <span className="text">email</span>
+                                <span className="text">contact@ajc.com</span>
                             </a>
                         </div>
                         <div className="col-5 footer__menu">

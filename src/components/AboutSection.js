@@ -33,8 +33,8 @@ class AboutSection extends Component {
     render() {
         return (
             <section className={"about"} data-anchor="about">
-                <div className="row d-block">
-                    <div className="col-12 about__title">
+                <div className="d-block">
+                    <div className="about__title">
                         <h1>Qui <br/> Sommes-nous...</h1>
                         <p>
                             La plateforme jeunesse constructive est une
@@ -44,7 +44,7 @@ class AboutSection extends Component {
                             de développement du Gabon.
                         </p>
                     </div>
-                    <div className="col-12 about__content h-100">
+                    <div className="about__content">
                         <h2 className={"underline__effect"}>Nos actions</h2>
                         <div className="slider-wrapper">
                             <ArticleCarroussel items={this.state.items} onChange={this.displayActive} />
