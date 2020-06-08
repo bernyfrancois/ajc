@@ -1,0 +1,127 @@
+.actus{
+    padding-top: 4rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.actus .actus__title{
+    font-size: 1.5rem;
+    background: var(--main-blue);
+    padding: 0.5rem 1rem;
+    align-self: flex-start;
+    width: 250px;
+    color: #ffffff;
+    text-align: right;
+    margin-bottom: 1rem;
+    border-radius: 0 20px 20px 0;
+}
+
+.actus .slider__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.actus .slider__image{
+    height: 200px;
+    width: 340px;
+    z-index: 1;
+    box-shadow: 0 3px 5px 1px rgba(51, 51, 51, 0.49);
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.actus .slider__image img{
+    height: 100%;
+    width: 100%;
+}
+
+.slider__contain{
+    background: var(--secondary-color);
+    min-height: 350px;
+    min-width: 350px;
+    border-radius: 50%;
+    position: relative;
+    top: -130px;
+    padding-top: 175px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+}
+
+.slider__title{
+    font-size: 1.1rem;
+}
+
+.slider__text{
+    font-size: 1rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+.actus .rec-pagination{
+    position: absolute;
+    top: 200px;
+}
+
+.actus .rec-dot{
+    border: 4px solid var(--main-green);
+    box-shadow: none;
+    background: var(--main-green);
+    transition: all 0.2s;
+}
+
+.actus .rec-dot.rec-dot_active{
+    transform: scale(1.65);
+}
+
+.actus .slider__container{
+    height: 450px;
+    position: relative;
+}
+
+
+
+.actus .slider__link{
+    display: flex;
+    height: 50px;
+    width: 50px;
+    background: var(--main-blue);
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    font-weight: bold;
+    color: #fff;
+    right: 10%;
+    bottom: 0;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+
+.actus .slider__link > span{
+    position: absolute;
+    border: 1px solid var(--main-blue);
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 50%;
+}
+
+
+.actus .slider__link .border-1{
+    height: 100%;
+    width: 100%;
+    transform: scale(1.2);
+    animation: zooml1 0.5s ease-in-out alternate-reverse infinite;
+}
+.actus .slider__link .border-2{
+    height: 100%;
+    width: 100%;
+    transform: scale(1.5);
+    border-width: 2px;
+    animation: zooml2 0.5s ease-in-out alternate-reverse infinite;
+}
