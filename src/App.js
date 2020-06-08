@@ -11,6 +11,7 @@ import ContactSection from "./components/ContactSection";
 import Navbar from "./components/Navbar";
 import MobileNav from "./components/MobileNav";
 
+
 class App extends Component {
     constructor(props) {
         super(props);
@@ -57,10 +58,7 @@ const FullPage = () => (
         controlArrows ={true}
         sectionSelector={'section'}
         verticalCentered={false}
-        render={({state, fullpageApi}) => {
-            document.addEventListener("resize", (e) => {
-                fullpageApi.rebuild();
-            })
+        render={({fullpageApi}) => {
             return (
                 <ReactFullpage.Wrapper>
                     <HomeSection/>

@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import Carousel, { consts } from 'react-elastic-carousel';
 import './About.css';
 import imgPlaceholder from "../Jouez-et-gagnez.jpg"
+import {Link} from "react-router-dom";
 
 class AboutSection extends Component {
     constructor(props) {
@@ -27,14 +28,23 @@ class AboutSection extends Component {
     render() {
         return (
             <section className={"about"} data-anchor="about">
-
+                <div className="zone1">
+                    <h2 className={"zone1__title"}>Qui sommes-nous ?...</h2>
+                    <div className="zone1__text">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci asperiores commodi nesciunt nostrum possimus sapiente similique. Aliquam consectetur, eius fugit impedit modi nemo nulla provident quis quisquam, sit, vel voluptas!
+                    </div>
+                </div>
+                <div className="zone2">
+                    <h2 className={"zone2__title"}>Nos actions...</h2>
+                    <ArticleCarroussel items={this.state.items} itemToShow={3}/>
+                </div>
             </section>
         );
     }
 }
 
-const ArticleCarroussel = ({items, itemToShow, onChange}) => (
-    <Carousel itemsToShow={itemToShow} onChange={onChange} showArrows={false} breakPoints={[
+const ArticleCarroussel = ({items, itemToShow}) => (
+    <Carousel itemsToShow={itemToShow} showArrows={false} breakPoints={[
         {
             width: 400,
             itemsToShow: 1,
@@ -45,13 +55,13 @@ const ArticleCarroussel = ({items, itemToShow, onChange}) => (
         }
     ]}>
         {items.map(item => (
-            <a href="#" key={item.id} className="slider__item">
-                <img src={item.imgUrl} alt={item.title}/>
-                <h2>{item.title}</h2>
-                <a href="#">
-                    Voir plus
-                </a>
-            </a>
+            <Link to={`${item.id}`} key={item.id} className="slider__item">
+                <img className={"slider__image"} src={item.imgUrl} alt={item.title}/>
+                <div className="slider__overlay">
+                    <h2>{item.title}</h2>
+                </div>
+                <a href={item.id} className="slider__link">Voir plus <span className={"border-1"}/><span className={"border-2"}/></a>
+            </Link>
         ))}
     </Carousel>
 )

@@ -31,10 +31,12 @@ class HomeSection extends Component {
                 </div>
                 <div className="zone2">
                     <div className="zone2__container">
-                        <h1>Jeunesse Constructive</h1>
+                        <h1 className={"zone2__title"}>Jeunesse Constructive</h1>
                         <a href="#" className="zone2__join">Rejoignez Nous</a>
-                        <h2>CDI</h2>
-                        <img src={cdImg} alt="illustration" className="zone2__sloganImg"/>
+                        <div className="slogan__illustration">
+                            <img src={cdImg} alt="illustration" className="zone2__sloganImg"/>
+                            <h2 className={"slogan__title"}>CDI</h2>
+                        </div>
                     </div>
                     <div className={"zone2__slogan"}><span>Citoyen à Durée Indéterminé</span></div>
                 </div>
