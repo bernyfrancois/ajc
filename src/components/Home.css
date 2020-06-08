@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: flex-end;
     position: relative;
-    min-height: 100vh!important;
+    min-height: 100%!important;
 }
 
 .home .zone1__logo{
@@ -31,25 +31,25 @@
 }
 
 .home .zone1__link.green{
-    left: -40px;
+    left: -35px;
+    bottom: -20px;
     background: var(--main-green);
     height: 70px;
     width: 70px;
 }
 
 .home .zone1__link.blue{
-    right: -80px;
-    bottom: -5px;
+    right: -35px;
     background: var(--main-blue);
-    height: 80px;
-    width: 80px;
-}
-.home .zone1__link.yellow{
-    top: -20px;
-    background: var(--secondary-color);
     height: 60px;
     width: 60px;
-    right: -10px;
+}
+.home .zone1__link.yellow{
+    top: -10px;
+    background: var(--secondary-color);
+    height: 80px;
+    width: 80px;
+    right: -20px;
 }
 
 .home .zone1__link > span{
@@ -105,8 +105,8 @@
 }
 
 .home .zone1__container{
-    height: 200px;
-    width: 200px;
+    height: 250px;
+    width: 250px;
     background: rgb(85, 169, 0);
     position: absolute;
     bottom: -50px;
@@ -120,6 +120,8 @@
 .home .zone2__sloganImg{
     height: 150px;
     width: auto;
+    position: relative;
+    bottom: -2px;
 }
 
 .slogan__illustration{
@@ -141,7 +143,7 @@
     width: 100%;
     background: var(--secondary-color);
     border-radius: 50% 50% 0 0;
-    padding-top: 60px;
+    padding-top: 80px;
 }
 
 .home .zone2__slogan{
@@ -152,6 +154,7 @@
     font-weight: bolder;
     color: #ffffff;
     text-shadow: 1px 3px 5px rgb(35, 35, 35);
+    position: relative;
 }
 
 .home .zone2__container{

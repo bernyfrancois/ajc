@@ -31,7 +31,7 @@ class AboutSection extends Component {
                 <div className="zone1">
                     <h2 className={"zone1__title"}>Qui sommes-nous ?...</h2>
                     <div className="zone1__text">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci asperiores commodi nesciunt nostrum possimus sapiente similique. Aliquam consectetur, eius fugit impedit modi nemo nulla provident quis quisquam, sit, vel voluptas!
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci asperiores commodi nesciunt nostrum possimus sapiente similique!
                     </div>
                 </div>
                 <div className="zone2">

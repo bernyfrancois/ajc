@@ -12,7 +12,7 @@ class HomeSection extends Component {
                         <div className="zone1__logo">
                             <img src={logo} alt="association jeunesse constructive" className="img-fluid"/>
                         </div>
-                        <a data-menuanchor="actus" href="#actus"className="zone1__link blue">
+                        <a data-menuanchor="actus" href="#actus"className="zone1__link yellow">
                             Actualités
                             <span className="border-1" />
                             <span className="border-2" />
@@ -22,7 +22,7 @@ class HomeSection extends Component {
                             <span className="border-1" />
                             <span className="border-2" />
                         </a>
-                        <a data-menuanchor="about" href="#about" className="zone1__link yellow">
+                        <a data-menuanchor="about" href="#about" className="zone1__link blue">
                             AJC
                             <span className="border-1" />
                             <span className="border-2" />
