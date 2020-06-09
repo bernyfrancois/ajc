@@ -11,7 +11,6 @@ import ContactSection from "./components/ContactSection";
 import Navbar from "./components/Navbar";
 import MobileNav from "./components/MobileNav";
 
-
 class App extends Component {
     constructor(props) {
         super(props);
@@ -20,12 +19,14 @@ class App extends Component {
         }
     }
 
+
     // arrow func for bind this
     toggleMobileNav = () => {
         this.setState({
             displayMobileNav: !this.state.displayMobileNav
         })
     }
+
 
     render() {
         return (
@@ -58,10 +59,10 @@ const FullPage = () => (
         controlArrows ={true}
         sectionSelector={'section'}
         verticalCentered={false}
-        render={({fullpageApi}) => {
+        render={(fullpageApi) => {
             return (
                 <ReactFullpage.Wrapper>
-                    <HomeSection/>
+                    <HomeSection />
                     <AboutSection/>
                     <ActusSection/>
                     <ContactSection/>
@@ -70,4 +71,5 @@ const FullPage = () => (
         }}
     />
 )
+
 export default App;

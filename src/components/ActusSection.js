@@ -39,11 +39,15 @@ const ArticlesSlider = ({ items, itemToShow }) => (
         },
         {
             width: 600,
+            itemsToShow: 2,
+        },
+        {
+            width: 1000,
             itemsToShow: 3,
         }
     ]}>
         {items.map(item => (
-            <Link to={`${item.id}`} key={item.id} className="slider__item">
+            <div to={`${item.id}`} key={item.id} className="slider__item">
                 <div className="slider__image">
                     <img src={item.imgUrl} alt={item.title}/>
                 </div>
@@ -54,7 +58,7 @@ const ArticlesSlider = ({ items, itemToShow }) => (
                     </p>
                     <a href={item.id} className="slider__link">Voir plus <span className={"border-1"}/><span className={"border-2"}/></a>
                 </div>
-            </Link>
+            </div>
         ))}
     </Carousel>
 )

@@ -4,6 +4,16 @@ import logo from "../logo.png";
 import "./Home.css";
 
 class HomeSection extends Component {
+    constructor(props) {
+        super(props);
+    }
+
+    componentDidMount() {
+        window.addEventListener('resize', () => {
+            this.forceUpdate()
+        })
+    }
+
     render() {
         return (
             <section className={"home"} data-anchor="home">

@@ -3,18 +3,18 @@
     flex-direction: column;
     justify-content: flex-end;
     position: relative;
-    min-height: 100%!important;
+    min-height: 100vw!important;
 }
 
 .home .zone1__logo{
-    width: 140px;
+    width: 150px;
 }
 
 .home .zone1{
     display: flex;
     justify-content: center;
     position: relative;
-    padding-right: 20px;
+    padding-right: 45px;
 }
 
 .home .zone1__link{
@@ -31,7 +31,7 @@
 }
 
 .home .zone1__link.green{
-    left: -35px;
+    left: -10px;
     bottom: -20px;
     background: var(--main-green);
     height: 70px;
@@ -47,8 +47,8 @@
 .home .zone1__link.yellow{
     top: -10px;
     background: var(--secondary-color);
-    height: 80px;
-    width: 80px;
+    height: 90px;
+    width: 90px;
     right: -20px;
 }
 
@@ -105,13 +105,13 @@
 }
 
 .home .zone1__container{
-    height: 250px;
-    width: 250px;
+    height: 280px;
+    width: 280px;
     background: rgb(85, 169, 0);
     position: absolute;
     bottom: -50px;
     border-radius: 50%;
-    padding: 20px 10px 10px 40px;
+    padding: 20px 20px 20px 60px;
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -148,7 +148,7 @@
 
 .home .zone2__slogan{
     padding: 0.5rem;
-    background: linear-gradient(180deg, rgba(68,109,3,1) 20%, rgba(85,169,0,1) 100%);
+    background: rgb(62, 187, 39);
     font-size: 1.5rem;
     text-align: center;
     font-weight: bolder;
@@ -188,7 +188,7 @@
     color: var(--main-blue);
 }
 
-@media screen and (max-width: 340px) {
+@media screen and (max-width: 380px) {
     .home .zone2__title{
         font-size: 1.3rem;
         font-weight: 700;
@@ -202,6 +202,6 @@
     }
 
     .home .zone2__sloganImg{
-        height: 100px;
+        height: 150px;
     }
 }

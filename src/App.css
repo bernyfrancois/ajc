@@ -160,9 +160,11 @@ h1,h2,h4 {
     transform: rotate(0deg);
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 800px) {
   /* Style adjustments for viewports that meet the condition */
-
+  .actus , .about .zone1{
+    padding-top: 4.5rem!important;
+  }
 }
 
 

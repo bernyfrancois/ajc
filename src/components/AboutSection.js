@@ -51,17 +51,21 @@ const ArticleCarroussel = ({items, itemToShow}) => (
         },
         {
             width: 600,
+            itemsToShow: 2,
+        },
+        {
+            width: 900,
             itemsToShow: 3,
         }
     ]}>
         {items.map(item => (
-            <Link to={`${item.id}`} key={item.id} className="slider__item">
+            <div to={`${item.id}`} key={item.id} className="slider__item">
                 <img className={"slider__image"} src={item.imgUrl} alt={item.title}/>
                 <div className="slider__overlay">
                     <h2>{item.title}</h2>
                 </div>
                 <a href={item.id} className="slider__link">Voir plus <span className={"border-1"}/><span className={"border-2"}/></a>
-            </Link>
+            </div>
         ))}
     </Carousel>
 )
